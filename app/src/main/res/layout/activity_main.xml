@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDog"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/textViewHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health: "
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewHunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hunger: "
+        android:layout_below="@id/textViewHealth"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewCleanliness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleanliness: "
+        android:layout_below="@id/textViewHunger"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed"
+        android:layout_below="@id/textViewCleanliness"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_toRightOf="@id/buttonFeed"
+        android:layout_below="@id/textViewCleanliness"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean"
+        android:layout_toRightOf="@id/buttonPlay"
+        android:layout_below="@id/textViewCleanliness"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
